@@ -145,7 +145,22 @@
             <div class="form-group">
              <textarea class="form-control rounded-0" rows="5" placeholder="Мурожаат матни" ></textarea>
             </div>
+            {{--file upload--}}
+            <div class="input-default-wrapper mt-4">
 
+                <span class="input-group-text mb-3" id="input2">Upload</span>
+
+                <input type="file" id="file-with-multi-file" class="input-default-js" data-multiple-target="{target} files selected"
+                       multiple>
+
+                <label class="label-for-default-js rounded-right mb-3" for="file-with-multi-file"><span class="span-choose-file">Choose
+      file</span>
+
+                    <div class="float-right span-browse">Browse</div>
+
+                </label>
+
+            </div>
             <!-- Copy -->
             <div class="custom-control custom-checkbox mb-4">
                 <input
