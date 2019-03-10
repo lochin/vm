@@ -19,3 +19,5 @@ Auth::routes();
 Route::group(['prefix'=>'admin/', 'namespace'=>'admin', 'as'=>'admin.', 'middleware'=>'auth'], function (){
    Route::get('/', 'ApplyController@index')->name('apply.index');
 });
+Route::get('/admin', 'PageController@admin')->name('admin');
+Route::post('/create/message', 'PageController@store')->name('xabar.store');

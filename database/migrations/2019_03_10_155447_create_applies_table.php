@@ -22,8 +22,8 @@ class CreateAppliesTable extends Migration
             $table->string('region');
             $table->string('district');
             $table->longText('message');
-            $table->string('file_url');
-            $table->boolean('status');
+            $table->string('file_url')->nullable();
+            $table->boolean('status')->default('0');
             $table->timestamps();
         });
     }

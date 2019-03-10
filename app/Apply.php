@@ -13,5 +13,8 @@ class Apply extends Model
         'phone',
         'region',
         'district',
+        'message',
+        'file_url',
+        'status'
         ];
 }
