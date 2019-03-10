@@ -72,38 +72,53 @@
             </div>
 
         </section>
+        @if ($errors->any())
+            <div class="alert alert-danger">
+                <ul>
+                    @foreach ($errors->all() as $error)
+                        <li>{{ $error }}</li>
+                    @endforeach
+                </ul>
+            </div><br />
+        @endif
+        @if(session()->get('success'))
+            <div class="alert alert-success">
+                {{ session()->get('success') }}
+            </div><br />
+        @endif
         <!-- Section: Testimonials v.2 -->
         <!-- Default form contact -->
-        <form class="text-center p-5" action="" enctype="multipart/form-data">
-
+        <form class="text-center p-5" action="{{route('xabar.store')}}" enctype="multipart/form-data" method="post">
+            @csrf
+            @method('POST')
             <p class="h4 mb-4">Виртуал қабулхонага мурожаат юборинг</p>
 
             <div class="form-row mb-2">
                 <div class="col">
                     <!-- First name -->
-                    <input type="text" class="form-control mb-4" placeholder="Исм" />
+                    <input type="text" class="form-control mb-4" name="firstname" placeholder="Исм" />
                 </div>
                 <div class="col">
                     <!-- Last name -->
-                    <input type="text" class="form-control mb-4" placeholder="Фамилия" />
+                    <input type="text" class="form-control mb-4" name="lastname" placeholder="Фамилия" />
                 </div>
             </div>
 
             <div class="form-row mb-2">
                 <div class="col">
                     <!-- Email -->
-                    <input type="email" class="form-control mb-4" placeholder="Электрон почта" />
+                    <input type="email" class="form-control mb-4" name="email" placeholder="Электрон почта" />
                 </div>
                 <div class="col">
                     <!-- Phone number -->
-                    <input type="text" class="form-control mb-4" placeholder="Телефон рақами" />
+                    <input type="text" class="form-control mb-4" name="phone" placeholder="Телефон рақами" />
                 </div>
             </div>
 
             <div class="form-row mb-2">
                 <div class="col">
                     <!-- City -->
-                    <select class="browser-default custom-select mb-4">
+                    <select class="browser-default custom-select mb-4" name="region">
                         <option disabled selected>--Ҳудуд--</option>
                         <option value="1703">Андижон вилояти</option>
                         <option value="1706">Бухоро вилояти</option>
@@ -124,7 +139,7 @@
                 </div>
                 <div class="col">
                     <!-- District -->
-                    <select class="browser-default custom-select mb-4">
+                    <select class="browser-default custom-select mb-4" name="district">
                         <option disabled selected></option>
                         <option value="1726262">Учтепа тумани</option>
                         <option value="1726264">Бектемир тумани</option>
@@ -143,7 +158,7 @@
 
             <!-- Message -->
             <div class="form-group">
-             <textarea class="form-control rounded-0" rows="5" placeholder="Мурожаат матни" ></textarea>
+             <textarea class="form-control rounded-0" rows="5" placeholder="Мурожаат матни" name="message" ></textarea>
             </div>
             {{--file upload--}}
             <small class="text-center"><i class="fas fa-exclamation-circle  text-warning mx-2"></i>Yuklamalar hajmi 5mb dan kichik bo'lishi shart</small>
@@ -151,7 +166,7 @@
 
                 <span class="input-group-text mb-3" id="input2">Upload</span>
 
-                <input type="file" id="file-with-multi-file" class="input-default-js" data-multiple-target="{target} files selected"
+                <input type="file" id="file-with-multi-file" name="file_url[]" class="input-default-js" data-multiple-target="{target} files selected"
                        multiple>
 
                 <label class="label-for-default-js rounded-right mb-3" for="file-with-multi-file"><span class="span-choose-file">Choose
