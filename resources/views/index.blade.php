@@ -73,18 +73,24 @@
 
         </section>
         @if ($errors->any())
-            <div class="alert alert-danger">
+            <div class="alert alert-danger alert-dismissible fade show" role="alert">
                 <ul>
                     @foreach ($errors->all() as $error)
                         <li>{{ $error }}</li>
                     @endforeach
                 </ul>
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
             </div><br />
         @endif
         @if(session()->get('success'))
-            <div class="alert alert-success">
-                {{ session()->get('success') }}
-            </div><br />
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                <strong>{{ session()->get('success') }}</strong>
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
         @endif
         <!-- Section: Testimonials v.2 -->
         <!-- Default form contact -->
@@ -194,6 +200,8 @@
         <!-- Default form contact -->
     </div>
 @endsection
+@push('js')
 
+    @endpush
 
 
