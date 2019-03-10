@@ -15,4 +15,7 @@ Route::get('/', 'PageController@index')->name('index');
 
 Auth::routes();
 
-Route::get('/admin', 'PageController@admin')->name('admin');
+//Route::get('/admin', 'PageController@admin')->name('admin');
+Route::group(['prefix'=>'admin/', 'namespace'=>'admin', 'as'=>'admin.', 'middleware'=>'auth'], function (){
+   Route::get('/', 'ApplyController@index')->name('apply.index');
+});
