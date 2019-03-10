@@ -78,35 +78,68 @@
 
             <p class="h4 mb-4">Виртуал қабулхонага мурожаат юборинг</p>
 
-            <!-- First Name -->
-            <input type="text" class="form-control mb-4" placeholder="Исм" />
+            <div class="form-row mb-2">
+                <div class="col">
+                    <!-- First name -->
+                    <input type="text" class="form-control mb-4" placeholder="Исм" />
+                </div>
+                <div class="col">
+                    <!-- Last name -->
+                    <input type="text" class="form-control mb-4" placeholder="Фамилия" />
+                </div>
+            </div>
 
-            <!-- Last Name -->
-            <input type="text" class="form-control mb-4" placeholder="Фамилия" />
+            <div class="form-row mb-2">
+                <div class="col">
+                    <!-- Email -->
+                    <input type="email" class="form-control mb-4" placeholder="Электрон почта" />
+                </div>
+                <div class="col">
+                    <!-- Phone number -->
+                    <input type="text" class="form-control mb-4" placeholder="Телефон рақами" />
+                </div>
+            </div>
 
-            <!-- Email -->
-            <input type="email" class="form-control mb-4" placeholder="Электрон почта" />
-
-            <!-- Subject -->
-            <label>Ҳудуд</label>
-            <select class="browser-default custom-select mb-4">
-                <option disabled selected></option>
-                <option value="1703">Андижон вилояти</option>
-                <option value="1706">Бухоро вилояти</option>
-                <option value="1708">Жиззах вилояти</option>
-                <option value="1710">Қашқадарё вилояти</option>
-                <option value="1712">Навоий вилояти</option>
-                <option value="1714">Наманган вилояти</option>
-                <option value="1718">Самарқанд вилояти</option>
-                <option value="1722">Сурхондарё вилояти</option>
-                <option value="1724">Сирдарё вилояти</option>
-                <option value="1726">Тошкент шаҳри</option>
-                <option value="1727">Тошкент вилояти</option>
-                <option value="1730">Фарғона вилояти</option>
-                <option value="1733">Хоразм вилояти</option>
-                <option value="1735">Қорақалпоғистон Республикаси</option>
-                <option value="9999">Чет эл</option></select>
-            </select>
+            <div class="form-row mb-2">
+                <div class="col">
+                    <!-- City -->
+                    <select class="browser-default custom-select mb-4">
+                        <option disabled selected>--Ҳудуд--</option>
+                        <option value="1703">Андижон вилояти</option>
+                        <option value="1706">Бухоро вилояти</option>
+                        <option value="1708">Жиззах вилояти</option>
+                        <option value="1710">Қашқадарё вилояти</option>
+                        <option value="1712">Навоий вилояти</option>
+                        <option value="1714">Наманган вилояти</option>
+                        <option value="1718">Самарқанд вилояти</option>
+                        <option value="1722">Сурхондарё вилояти</option>
+                        <option value="1724">Сирдарё вилояти</option>
+                        <option value="1726">Тошкент шаҳри</option>
+                        <option value="1727">Тошкент вилояти</option>
+                        <option value="1730">Фарғона вилояти</option>
+                        <option value="1733">Хоразм вилояти</option>
+                        <option value="1735">Қорақалпоғистон Республикаси</option>
+                        <option value="9999">Чет эл</option></select>
+                    </select>
+                </div>
+                <div class="col">
+                    <!-- District -->
+                    <select class="browser-default custom-select mb-4">
+                        <option disabled selected></option>
+                        <option value="1726262">Учтепа тумани</option>
+                        <option value="1726264">Бектемир тумани</option>
+                        <option value="1726266">Юнусобод тумани</option>
+                        <option value="1726269">Мирзо Улуғбек тумани</option>
+                        <option value="1726273">Миробод тумани</option>
+                        <option value="1726277">Шайхонтоҳур тумани</option>
+                        <option value="1726280">Олмазор тумани</option>
+                        <option value="1726283">Сирғали тумани</option>
+                        <option value="1726287">Яккасарой тумани</option>
+                        <option value="1726290">Яшнобод тумани</option>
+                        <option value="1726294">Чилонзор тумани</option>
+                    </select>
+                </div>
+            </div>
 
             <!-- Message -->
             <div class="form-group">
