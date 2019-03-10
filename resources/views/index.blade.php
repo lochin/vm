@@ -74,7 +74,7 @@
         </section>
         <!-- Section: Testimonials v.2 -->
         <!-- Default form contact -->
-        <form class="text-center p-5">
+        <form class="text-center p-5" action="" enctype="multipart/form-data">
 
             <p class="h4 mb-4">Виртуал қабулхонага мурожаат юборинг</p>
 
