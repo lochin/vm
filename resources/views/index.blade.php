@@ -146,7 +146,8 @@
              <textarea class="form-control rounded-0" rows="5" placeholder="Мурожаат матни" ></textarea>
             </div>
             {{--file upload--}}
-            <div class="input-default-wrapper mt-4">
+            <small class="text-center"><i class="fas fa-exclamation-circle  text-warning mx-2"></i>Yuklamalar hajmi 5mb dan kichik bo'lishi shart</small>
+            <div class="input-default-wrapper mt-2">
 
                 <span class="input-group-text mb-3" id="input2">Upload</span>
 
@@ -154,7 +155,7 @@
                        multiple>
 
                 <label class="label-for-default-js rounded-right mb-3" for="file-with-multi-file"><span class="span-choose-file">Choose
-      file</span>
+                 file</span>
 
                     <div class="float-right span-browse">Browse</div>
 
