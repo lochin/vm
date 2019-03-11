@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>Ўзбекистон Республикаси Вазирлар Маҳкамаси</title>
 
     <!-- Styles -->
     <!-- Font Awesome -->
@@ -26,9 +26,9 @@
                 <a class="navbar-brand" href="{{ url('/') }}">
                     <div class="row">
                         <div class="col-md-2 text-center">
-                            <img class="mr-2" src="{{ asset('img/gerb.png') }}" width="80" height="82">
+                            <img src="{{ asset('img/gerb.png') }}" width="80" height="82">
                         </div>
-                        <div class="col-md-10 text-center">
+                        <div class="col-md-10 text-center my-auto">
                             <span class="text-wrap">Ўзбекистон Республикаси Вазирлар Маҳкамаси виртуал қабулхонаси</span>
                         </div>
                     </div>
@@ -49,11 +49,11 @@
                         <!-- Authentication Links -->
                         @guest
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                                <a class="nav-link" href="{{ route('login') }}">Кириш</a>
                             </li>
                             @if (Route::has('register'))
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                    <a class="nav-link" href="{{ route('register') }}">Рўйхатдан ўтиш</a>
                                 </li>
                             @endif
                         @else

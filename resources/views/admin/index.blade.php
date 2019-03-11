@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
+<div class="container my-3">
     <div class="row justify-content-center">
         <ul class="list-group w-100">
             @foreach($applies as $key => $apply)

@@ -126,38 +126,38 @@
                     <!-- City -->
                     <select class="browser-default custom-select mb-4" name="region">
                         <option disabled selected>--Ҳудуд--</option>
-                        <option value="1703">Андижон вилояти</option>
-                        <option value="1706">Бухоро вилояти</option>
-                        <option value="1708">Жиззах вилояти</option>
-                        <option value="1710">Қашқадарё вилояти</option>
-                        <option value="1712">Навоий вилояти</option>
-                        <option value="1714">Наманган вилояти</option>
-                        <option value="1718">Самарқанд вилояти</option>
-                        <option value="1722">Сурхондарё вилояти</option>
-                        <option value="1724">Сирдарё вилояти</option>
-                        <option value="1726">Тошкент шаҳри</option>
-                        <option value="1727">Тошкент вилояти</option>
-                        <option value="1730">Фарғона вилояти</option>
-                        <option value="1733">Хоразм вилояти</option>
-                        <option value="1735">Қорақалпоғистон Республикаси</option>
-                        <option value="9999">Чет эл</option></select>
+                        <option value="Андижон вилояти">Андижон вилояти</option>
+                        <option value="Бухоро вилояти">Бухоро вилояти</option>
+                        <option value="Жиззах вилояти">Жиззах вилояти</option>
+                        <option value="Қашқадарё вилояти">Қашқадарё вилояти</option>
+                        <option value="Навоий вилояти">Навоий вилояти</option>
+                        <option value="Наманган вилояти">Наманган вилояти</option>
+                        <option value="Самарқанд вилояти">Самарқанд вилояти</option>
+                        <option value="Сурхондарё вилояти">Сурхондарё вилояти</option>
+                        <option value="Сирдарё вилояти">Сирдарё вилояти</option>
+                        <option value="Тошкент шаҳри">Тошкент шаҳри</option>
+                        <option value="Тошкент вилояти">Тошкент вилояти</option>
+                        <option value="Фарғона вилояти">Фарғона вилояти</option>
+                        <option value="Хоразм вилояти">Хоразм вилояти</option>
+                        <option value="Қорақалпоғистон Республикаси">Қорақалпоғистон Республикаси</option>
+                        <option value="Чет эл">Чет эл</option></select>
                     </select>
                 </div>
                 <div class="col">
                     <!-- District -->
                     <select class="browser-default custom-select mb-4" name="district">
-                        <option disabled selected></option>
-                        <option value="1726262">Учтепа тумани</option>
-                        <option value="1726264">Бектемир тумани</option>
-                        <option value="1726266">Юнусобод тумани</option>
-                        <option value="1726269">Мирзо Улуғбек тумани</option>
-                        <option value="1726273">Миробод тумани</option>
-                        <option value="1726277">Шайхонтоҳур тумани</option>
-                        <option value="1726280">Олмазор тумани</option>
-                        <option value="1726283">Сирғали тумани</option>
-                        <option value="1726287">Яккасарой тумани</option>
-                        <option value="1726290">Яшнобод тумани</option>
-                        <option value="1726294">Чилонзор тумани</option>
+                        <option disabled selected>--Туман--</option>
+                        <option value="Учтепа тумани">Учтепа тумани</option>
+                        <option value="Бектемир тумани">Бектемир тумани</option>
+                        <option value="Юнусобод тумани">Юнусобод тумани</option>
+                        <option value="Мирзо Улуғбек тумани">Мирзо Улуғбек тумани</option>
+                        <option value="Миробод тумани">Миробод тумани</option>
+                        <option value="Шайхонтоҳур тумани">Шайхонтоҳур тумани</option>
+                        <option value="Олмазор тумани">Олмазор тумани</option>
+                        <option value="Сирғали тумани">Сирғали тумани</option>
+                        <option value="Яккасарой тумани">Яккасарой тумани</option>
+                        <option value="Яшнобод тумани">Яшнобод тумани</option>
+                        <option value="Чилонзор тумани">Чилонзор тумани</option>
                     </select>
                 </div>
             </div>
@@ -167,18 +167,15 @@
              <textarea class="form-control rounded-0" rows="5" placeholder="Мурожаат матни" name="message" ></textarea>
             </div>
             {{--file upload--}}
-            <small class="text-center"><i class="fas fa-exclamation-circle  text-warning mx-2"></i>Yuklamalar hajmi 5mb dan kichik bo'lishi shart</small>
+            <small class="text-center"><i class="fas fa-exclamation-circle  text-warning mx-2"></i>Юкламалар ҳажми 5МБ дан кичик бўлиши шарт</small>
             <div class="input-default-wrapper mt-2">
-
-                <span class="input-group-text mb-3" id="input2">Upload</span>
 
                 <input type="file" id="file-with-multi-file" name="file_url[]" class="input-default-js" data-multiple-target="{target} files selected"
                        multiple>
 
-                <label class="label-for-default-js rounded-right mb-3" for="file-with-multi-file"><span class="span-choose-file">Choose
-                 file</span>
+                <label class="label-for-default-js rounded-right mb-3" for="file-with-multi-file"><span class="span-choose-file">Файлларни юкланг</span>
 
-                    <div class="float-right span-browse">Browse</div>
+                    <div class="float-right span-browse">Файлларни танлаш</div>
 
                 </label>
 
