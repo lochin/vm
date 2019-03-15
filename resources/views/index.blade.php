@@ -224,9 +224,41 @@
         </form>
         <!-- Default form contact -->
     </div>
+    <!-- Modal -->
+    <div class="modal fade" id="offerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+         aria-hidden="true">
+
+        <!-- Add .modal-dialog-centered to .modal-dialog to vertically center the modal -->
+        <div class="modal-dialog modal-dialog-centered modal-lg my-3" role="document">
+
+
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aspernatur consequuntur cumque debitis doloremque doloribus, error excepturi id in incidunt magnam, minima nam necessitatibus nemo neque nobis recusandae sint suscipit tempora tempore ut velit, vero? Adipisci architecto consequatur enim labore officiis omnis temporibus tenetur. Accusantium blanditiis distinctio eius nihil optio porro quae, soluta sunt vitae voluptas? Cumque deserunt eligendi est expedita fugit labore libero minima natus neque non odit praesentium quibusdam, quos recusandae repudiandae sequi soluta suscipit. Aperiam asperiores dicta dolorum error esse facere ipsam odio, possimus quasi quisquam? A ad architecto at dignissimos, eaque eum expedita fuga minus mollitia nisi odit placeat provident similique. A accusamus aliquid at autem beatae delectus dicta dignissimos dolorem doloribus eaque eum fugiat impedit iure laboriosam maxime minus modi natus obcaecati officiis perferendis porro quae quasi quidem quod, ratione recusandae reprehenderit sed sequi sunt ullam velit vero vitae voluptates. Atque debitis, doloremque eius impedit odit provident quae tempore voluptatem! Doloremque enim facere ipsam laboriosam nam nemo nobis nulla voluptates. Ad aut dolore facere iusto maxime molestiae non officia perspiciatis suscipit voluptatem. Amet architecto consequuntur, cum delectus dignissimos, eveniet laborum numquam odit officia possimus reiciendis temporibus velit! Illum minus numquam qui ratione, reiciendis sequi. Assumenda cumque dolor excepturi inventore ipsam, ipsum, iste iusto molestias necessitatibus nobis quidem repudiandae, soluta vero! Aliquid assumenda at cum enim exercitationem explicabo, illo impedit libero minima nisi perspiciatis porro quae quibusdam quis quo quod ratione voluptates? Ad alias et itaque iure iusto libero nemo quas repudiandae vero voluptate? Autem consectetur consequuntur cupiditate dicta ducimus facilis in maxime nihil, pariatur quod, rem, repellendus! A consectetur dolores doloribus dolorum eius facere facilis inventore nemo saepe vitae. Accusantium adipisci aliquid animi architecto aspernatur autem eius harum in, labore minima minus nihil nostrum omnis optio provident quae, qui quia quibusdam reiciendis repellendus sint ut voluptate? A ab aliquam asperiores commodi, corporis dolores eligendi enim explicabo hic id incidunt magni natus neque nihil odio omnis quos rem sequi sint ut? A accusantium ad adipisci aliquid assumenda aut debitis delectus distinctio dolor dolore dolorem ducimus eaque, eligendi fuga harum laboriosam maiores minima minus nam necessitatibus neque nesciunt nihil, nostrum omnis praesentium quod repellat rerum sunt temporibus unde vel vero voluptatibus voluptatum. Accusantium, amet consectetur culpa doloremque dolores eos error illum ipsam iste molestiae natus, obcaecati quis voluptatem? Assumenda commodi debitis dolor est magni natus perspiciatis quo saepe velit voluptatem. Amet aperiam ea iste iure obcaecati recusandae veritatis? Accusamus aliquid aspernatur aut beatae blanditiis consequuntur, culpa cum cupiditate debitis deserunt dolor dolorum earum et harum illum impedit, itaque libero nam necessitatibus nesciunt nisi nulla porro possimus quaerat qui quo ratione, repellat tempora ullam voluptate? A aliquid consequuntur corporis error esse eveniet harum iusto quia, reprehenderit sit. Aliquam, est facilis molestias quasi repellat similique voluptate. A adipisci aperiam, autem beatae corporis dicta est fugiat illum ipsum laudantium natus odit officia officiis quae quo sint vero! Animi cumque eligendi error esse est ex, fugiat illum labore minima minus nisi nobis obcaecati provident sit soluta tempore ut voluptate voluptatem voluptatibus!
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" id="modalcheck">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
 @endsection
 @push('js')
-
+    $(document).ready(function(){
+            $("#defaultContactFormCopy").click(function(){
+                $('#submitform').removeAttr("disabled");
+                });
+                $("#modalcheck").click(function(){
+                $('#submitform').removeAttr("disabled");
+            });
+            });
     @endpush
 
 
