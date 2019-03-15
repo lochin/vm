@@ -13,4 +13,13 @@ class ApplyController extends Controller
         $applies = Apply::Latest()->paginate(10);
         return view('admin.index', ['applies'=>$applies]);
     }
+
+    public function show(Apply $apply)
+    {
+//        return response()->json(array('apply'=> $apply), 200);
+        $apply->status = 1;
+        $apply->save();
+        return response()->json(array('apply'=> $apply), 200);
+
+    }
 }
