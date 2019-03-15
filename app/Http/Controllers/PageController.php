@@ -81,6 +81,6 @@ class PageController extends Controller
         $message->file_url=json_encode($data);
         $message->save();
 
-        return redirect()->route('index')->with('success', 'Xabar jo\'natildi');
+        return redirect()->route('index')->with('success', "Хабар жўнатилди!");
     }
 }

@@ -1,8 +1,9 @@
 <?php
 
-use Faker\Generator as Faker;
+use Faker\Factory as Faker;
 
-$factory->define(\App\Apply::class, function (Faker $faker) {
+$factory->define(\App\Apply::class, function ($faker) {
+    $faker = Faker::create('ru_RU');
     return [
         'firstname' => $faker->firstName,
         'lastname' => $faker->lastName,
