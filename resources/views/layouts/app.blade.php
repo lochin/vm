@@ -24,11 +24,11 @@
         <nav class="navbar navbar-expand-md navbar-dark info-color">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    <div class="row">
-                        <div class="col-md-2 text-center">
+                    <div class="row align-items-lg-center align-content-md-center align-items-sm-center ">
+                        <div class="col-md-2 text-center align-items-center">
                             <img class="mr-2" src="{{ asset('img/gerb.png') }}" width="80" height="82">
                         </div>
-                        <div class="col-md-10 text-center">
+                        <div class="col-md-10 text-center align-items-center">
                             <span class="text-wrap">Ўзбекистон Республикаси Вазирлар Маҳкамаси виртуал қабулхонаси</span>
                         </div>
                     </div>
